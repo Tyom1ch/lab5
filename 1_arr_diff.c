@@ -46,10 +46,11 @@ int main() {
                 c[i] = a[i] - b[i];
             }
 
-            printf("Масив c (a[i] - b[i]):\n");
+            printf("Результат (a[i] - b[i] = c[i]):\n");
             for (i = 0; i < n; i++) {
-                printf("c[%d] = %d\n", i, c[i]);
+                printf("a[%d] - b[%d] = c[%d]\n", a[i], b[i], c[i]);
             }
+            
         } else {
             printf("Невірний вибір. Спробуйте ще раз.\n");
         }
