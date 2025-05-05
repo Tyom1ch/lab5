@@ -46,7 +46,7 @@ int main() {
                 c[i] = a[i] - b[i];
             }
 
-            printf("Результат (a[i] - b[i] = c[i]):\n");
+            printf("~~~\nРезультат (a[i] - b[i] = c[i]):\n");
             for (i = 0; i < n; i++) {
                 printf("a[%d] - b[%d] = c[%d]\n", a[i], b[i], c[i]);
             }
