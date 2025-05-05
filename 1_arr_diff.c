@@ -25,18 +25,31 @@ int main() {
             if (n > MAX_SIZE) {
                 printf("Перевищено максимальний розмір масиву (%d)\n", MAX_SIZE);
                 continue; // Повернення до початку циклу while
+            } else if (n < 1) {
+                printf("Кількість елементів має бути більшою за нуль!\n");
+                continue; // Повернення до початку циклу while
             }
 
-            printf("Введіть елементи масиву a:\n");
+            printf("Введіть елементи масиву a (не менше 0):\n");
             for (i = 0; i < n; i++) {
-                printf("a[%d] = ", i);
-                scanf("%d", &a[i]);
+                do {
+                    printf("a[%d] = ", i);
+                    scanf("%d", &a[i]);
+                    if (a[i] < 0) {
+                        printf("Введіть невід'ємне число!\n");
+                    }
+                } while (a[i] < 0);
             }
 
-            printf("Введіть елементи масиву b:\n");
+            printf("Введіть елементи масиву b (не менше 0):\n");
             for (i = 0; i < n; i++) {
-                printf("b[%d] = ", i);
-                scanf("%d", &b[i]);
+                do {
+                    printf("b[%d] = ", i);
+                    scanf("%d", &b[i]);
+                    if (b[i] < 0) {
+                        printf("Введіть невід'ємне число!\n");
+                    }
+                } while (b[i] < 0);
             }
 
             for (i = 0; i < n; i++) {
